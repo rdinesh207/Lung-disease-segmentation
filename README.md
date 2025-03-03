@@ -9,7 +9,7 @@ Dataset
 
 This project utilizes the VINDR-CXR dataset, a large-scale chest X-ray dataset for abnormality detection. The dataset is publicly available on Kaggle:
 
-VINDR-CXR Dataset on Kaggle: https://www.google.com/url?sa=E&source=gmail&q=https://www.kaggle.com/datasets/vinmecdata/vindrcxr
+VINDR-CXR Dataset on Kaggle: https://www.kaggle.com/datasets/vinmecdata/vindrcxr
 
 The VINDR-CXR dataset contains chest X-ray images in DICOM format and bounding box annotations for various thoracic abnormalities. This code expects the dataset to be structured with train and test folders containing JPEG images and corresponding annotation CSV files.
 
@@ -24,7 +24,7 @@ The object detection model is based on Faster RCNN with a Swin Transformer as th
 
 Reference Paper:
 
-Swin Transformer: Hierarchical Vision Transformer using Shifted Windows: https://www.google.com/url?sa=E&source=gmail&q=https://arxiv.org/abs/2103.14030
+Swin Transformer: Hierarchical Vision Transformer using Shifted Windows: https://arxiv.org/abs/2103.14030
 
 This implementation leverages pre-trained weights for the Swin Transformer backbone from `torchvision.models`.
 
