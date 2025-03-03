@@ -107,10 +107,10 @@ pip install torch torchvision torchaudio matplotlib opencv-python pandas scikit-
 
 2.  **Prepare the dataset** as described in the "Data Preparation" section.
 
-3.  **Run the `main.py` script**:
+3.  **Run the `swin_fasterrcnn.py` script**:
 
     ```bash
-    python main.py
+    python swin_fasterrcnn.py
     ```
 
     This script will:
@@ -123,13 +123,13 @@ pip install torch torchvision torchaudio matplotlib opencv-python pandas scikit-
 
 ## Code Structure
 
-  * `main.py`: Contains the main training and evaluation loop, dataset loading, model definition, and training configurations.
+  * `swin_fasterrcnn.py`: Contains the main training and evaluation loop, dataset loading, model definition, and training configurations.
   * `engine.py`, `utils.py`, `coco_utils.py`, `coco_eval.py`, `transforms.py`: These files are directly taken from the PyTorch Vision references for object detection and provide utility functions for training, evaluation, and data handling. They are essential for running the training script.
 
 ## Training Details
 
-  * **Epochs**: 5 (configurable in `main.py`)
-  * **Batch Size**: 6 (configurable in `main.py`)
+  * **Epochs**: 5 (configurable in `swin_fasterrcnn.py`)
+  * **Batch Size**: 6 (configurable in `swin_fasterrcnn.py`)
   * **Optimizer**: Adam
   * **Learning Rate**: 0.001
   * **Learning Rate Scheduler**: StepLR (steps every 3 epochs, gamma=0.1)
